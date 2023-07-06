@@ -1,0 +1,62 @@
+/*
+ * main style sheet
+*/
+
+/*
+ * configuration
+*/
+
+$font-size-base: 1rem;
+$font-family-base: 'Montserrat', sans-serif;
+$font-family-heading: $font-family-base;
+$color-text: #444444;
+
+$color-blossom: #1d7484;
+$color-fade: #982c61;
+
+$color-bg: #ffffff;
+$color-bg-alt: #f1f1f1;
+
+$header-color: #444444;
+$header-color-bg: #eeeeee;
+
+$sidebar-color: #444444;
+$sidebar-color-bg: #ffffff;
+
+$footer-color: #ffffff;
+$footer-color-bg: #444444;
+
+@mixin word-wrap() {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+  }
+  
+/*
+ * imports
+*/
+
+// css reset
+@import 'base/reset';
+
+// base declarations
+@import 'base/base';
+
+// typography
+@import 'components/typo';
+
+// links, buttons, input
+@import 'components/links';
+
+// navigation
+@import 'components/navigation';
+
+// media, images, video, audio
+@import 'components/media';
+
+// layout
+@import 'layout/layout';
+
+// osano cookie banner
+@import 'components/osano';

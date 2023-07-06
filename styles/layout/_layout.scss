@@ -1,0 +1,94 @@
+// layout
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+// header
+
+.site-header {
+  background: $header-color-bg;
+  color: $header-color;
+	
+  a {
+    h1 {
+	  color: $header-color;
+	  font-weight: bold;
+	  letter-spacing: 0.2rem;
+	}
+	
+  }
+  
+  .description {
+    font-weight: bold;
+	font-style: italic;
+	letter-spacing: 5px;
+  }
+}
+
+// main
+
+.main-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0 2rem 0;
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        
+        .content {
+            max-width: 65%;
+        }
+        
+        .sidebar {
+            max-width: 30%;
+        }
+    }
+    
+    article {
+        padding: 1rem;
+    }
+}
+
+.article-meta {
+    background: #444444;
+    color: white;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    font-size: 80%;
+    a {
+        color: white;
+        text-decoration: underline;
+        font-size: 80%;
+    }
+}
+
+.readmore {
+    background: #444444;
+    color: white;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+}
+
+// sidebar
+
+aside {
+  background: $sidebar-color-bg;
+  color: $sidebar-color;
+  padding: 1rem;
+}
+
+// footer
+
+.site-footer {
+  background: $footer-color-bg;
+  
+  p {
+    color: $footer-color;
+  }
+}
